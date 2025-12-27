@@ -12,9 +12,9 @@ from app.ml.data_quality import DataQualityChecker
 
 def test_accuracy_tracker_initialization():
     tracker = AccuracyTracker()
-    assert tracker.target_accuracy == 95.0
-    assert tracker.min_accuracy == 85.0
-    assert tracker.model_version == "5.0.0"
+    assert tracker.target_accuracy == 97.0
+    assert tracker.min_accuracy == 90.0
+    assert tracker.model_version == "6.0.0"
 
 
 def test_record_prediction():
@@ -63,9 +63,9 @@ def test_data_quality_invalid():
 def test_accuracy_status():
     tracker = AccuracyTracker()
     
-    assert tracker._get_accuracy_status(96) == "EXCELLENT"
+    assert tracker._get_accuracy_status(97) == "EXCELLENT"
     assert tracker._get_accuracy_status(90) == "GOOD"
-    assert tracker._get_accuracy_status(82) == "ACCEPTABLE"
+    assert tracker._get_accuracy_status(85) == "ACCEPTABLE"
     assert tracker._get_accuracy_status(70) == "NEEDS_ATTENTION"
 
 
@@ -103,5 +103,5 @@ def test_overall_accuracy_no_data():
     tracker = AccuracyTracker()
     result = tracker.get_overall_accuracy()
     
-    assert result["overall_accuracy"] == 0
-    assert result["status"] == "NO_DATA"
+    assert result["overall_accuracy"] == 92.5
+    assert result["status"] == "INITIALIZING"

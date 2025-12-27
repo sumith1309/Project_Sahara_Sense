@@ -27,7 +27,7 @@ def test_root():
     
     assert response.status_code == 200
     assert response.json()["name"] == "HABOOB.ai"
-    assert response.json()["version"] == "5.0.0"
+    assert response.json()["version"] == "6.0.0"
 
 
 def test_accuracy_endpoint():
