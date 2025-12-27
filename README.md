@@ -41,6 +41,7 @@
 ### 🌟 Key Highlights
 
 ```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': { 'fontFamily': 'arial', 'fontSize': '16px', 'primaryColor': '#fff', 'primaryTextColor': '#333', 'primaryBorderColor': '#333', 'lineColor': '#333', 'secondaryColor': '#f4f4f4', 'tertiaryColor': '#fff'}}}%%
 mindmap
   root((SAHARA SENSE))
     AI Engine
@@ -102,6 +103,7 @@ mindmap
 ### 📡 **Multi-Source Data Intelligence**
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 graph LR
     A[Data Sources] --> B{Data Fusion<br/>Engine}
     B --> C[Quality<br/>Validation]
@@ -109,10 +111,10 @@ graph LR
     D --> E[Weighted<br/>Ensemble]
     E --> F[Real-time<br/>Dashboard]
     
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style E fill:#e8f5e9
-    style F fill:#f3e5f5
+    style A fill:#e3f2fd,stroke:#333,stroke-width:2px,color:#000
+    style B fill:#fff3e0,stroke:#333,stroke-width:2px,color:#000
+    style E fill:#e8f5e9,stroke:#333,stroke-width:2px,color:#000
+    style F fill:#f3e5f5,stroke:#333,stroke-width:2px,color:#000
 ```
 
 **9+ Premium Data Sources**:
@@ -131,6 +133,7 @@ graph LR
 ### 🏙️ **Complete UAE Coverage**
 
 ```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': { 'pie1': '#2196f3', 'pie2': '#4caf50', 'pie3': '#ff9800', 'pie4': '#f44336', 'pie5': '#9c27b0', 'pie6': '#795548', 'pie7': '#607d8b', 'pie8': '#9e9e9e', 'pieTitleTextSize': '20px', 'pieSectionTextSize': '16px', 'pieLegendTextSize': '14px', 'primaryTextColor': '#000'}}}%%
 pie title "Population Coverage Across UAE Emirates"
     "Dubai" : 35
     "Abu Dhabi" : 30
@@ -178,6 +181,7 @@ pie title "Population Coverage Across UAE Emirates"
 ## 🏗️ System Architecture
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 graph TB
     subgraph "Frontend Layer"
         A[Next.js 14<br/>React 18] --> B[Framer Motion<br/>Animations]
@@ -214,12 +218,12 @@ graph TB
     M --> Q
     M --> R
     
-    style A fill:#4fc3f7
-    style E fill:#81c784
-    style I fill:#ffb74d
-    style M fill:#ba68c8
-    style Q fill:#e57373
-    style R fill:#f06292
+    style A fill:#4fc3f7,stroke:#333,color:#000
+    style E fill:#81c784,stroke:#333,color:#000
+    style I fill:#ffb74d,stroke:#333,color:#000
+    style M fill:#ba68c8,stroke:#333,color:#000
+    style Q fill:#e57373,stroke:#333,color:#000
+    style R fill:#f06292,stroke:#333,color:#000
 ```
 
 ### 🔧 Technology Stack
@@ -270,6 +274,7 @@ graph TB
 ## 🔄 Data Flow Pipeline
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 sequenceDiagram
     participant U as User
     participant F as Frontend
@@ -308,6 +313,7 @@ sequenceDiagram
 ### 📊 Data Processing Pipeline
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 flowchart LR
     A[Raw Data<br/>Ingestion] --> B{Data<br/>Quality OK?}
     B -->|No| C[Flag &<br/>Discard]
@@ -322,11 +328,11 @@ flowchart LR
     J --> K[Cache &<br/>Store]
     K --> L[API<br/>Response]
     
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style F fill:#f3e5f5
-    style I fill:#c8e6c9
-    style L fill:#ffccbc
+    style A fill:#e3f2fd,stroke:#333,color:#000
+    style B fill:#fff3e0,stroke:#333,color:#000
+    style F fill:#f3e5f5,stroke:#333,color:#000
+    style I fill:#c8e6c9,stroke:#333,color:#000
+    style L fill:#ffccbc,stroke:#333,color:#000
 ```
 
 ---
@@ -336,6 +342,7 @@ flowchart LR
 ### 🧠 7-Model Ensemble Architecture
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 graph TD
     A[Real-time Data] --> B[Model 1:<br/>Pattern Recognition<br/>22%]
     A --> C[Model 2:<br/>Weather Correlation<br/>20%]
@@ -357,11 +364,11 @@ graph TD
     J --> K[Bias<br/>Correction]
     K --> L[Final<br/>Prediction<br/>97%+ Accuracy]
     
-    style A fill:#e3f2fd
-    style I fill:#fff3e0
-    style J fill:#f3e5f5
-    style K fill:#c8e6c9
-    style L fill:#ffccbc
+    style A fill:#e3f2fd,stroke:#333,color:#000
+    style I fill:#fff3e0,stroke:#333,color:#000
+    style J fill:#f3e5f5,stroke:#333,color:#000
+    style K fill:#c8e6c9,stroke:#333,color:#000
+    style L fill:#ffccbc,stroke:#333,color:#000
 ```
 
 ### 📈 Model Performance Metrics
@@ -380,6 +387,7 @@ graph TD
 ### 🎯 Kalman Filter Implementation
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 graph LR
     A[Previous<br/>State] --> B[Prediction<br/>Step]
     B --> C[Innovation<br/>Calculation]
@@ -389,10 +397,10 @@ graph LR
     F --> G[Covariance<br/>Update]
     G --> H[Smoothed<br/>Prediction]
     
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style E fill:#f3e5f5
-    style H fill:#c8e6c9
+    style A fill:#e3f2fd,stroke:#333,color:#000
+    style B fill:#fff3e0,stroke:#333,color:#000
+    style E fill:#f3e5f5,stroke:#333,color:#000
+    style H fill:#c8e6c9,stroke:#333,color:#000
 ```
 
 ---
@@ -493,6 +501,7 @@ NEXT_PUBLIC_MAP_STYLE=https://server.arcgisonline.com/ArcGIS/rest/services/World
 ### 🔗 Core Endpoints
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 graph LR
     A[Client] --> B[/api/v1/dust/current]
     A --> C[/api/v1/predictions/city_id]
@@ -508,13 +517,13 @@ graph LR
     F --> L[Health<br/>Status]
     G --> M[Live<br/>Updates]
     
-    style A fill:#e3f2fd
-    style B fill:#c8e6c9
-    style C fill:#fff3e0
-    style D fill:#ffccbc
-    style E fill:#f3e5f5
-    style F fill:#b2dfdb
-    style G fill:#ce93d8
+    style A fill:#e3f2fd,stroke:#333,color:#000
+    style B fill:#c8e6c9,stroke:#333,color:#000
+    style C fill:#fff3e0,stroke:#333,color:#000
+    style D fill:#ffccbc,stroke:#333,color:#000
+    style E fill:#f3e5f5,stroke:#333,color:#000
+    style F fill:#b2dfdb,stroke:#333,color:#000
+    style G fill:#ce93d8,stroke:#333,color:#000
 ```
 
 ### 📡 Detailed API Reference
@@ -657,6 +666,7 @@ ws.send(JSON.stringify({
 ### 🌈 Design System
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 graph TD
     A[Design System] --> B[Color Palette]
     A --> C[Typography]
@@ -679,11 +689,11 @@ graph TD
     E --> E2[Hover: Scale]
     E --> E3[Data: Slide]
     
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
-    style D fill:#c8e6c9
-    style E fill:#ffccbc
+    style A fill:#e3f2fd,stroke:#333,color:#000
+    style B fill:#fff3e0,stroke:#333,color:#000
+    style C fill:#f3e5f5,stroke:#333,color:#000
+    style D fill:#c8e6c9,stroke:#333,color:#000
+    style E fill:#ffccbc,stroke:#333,color:#000
 ```
 
 ### 📱 Responsive Dashboard Views
@@ -718,6 +728,7 @@ graph TD
 ### 🎬 Key Dashboards
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 stateDiagram-v2
     [*] --> Overview
     Overview --> Predictions
@@ -749,6 +760,7 @@ stateDiagram-v2
 ### 🛡️ Security Architecture
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 graph TB
     A[Client Request] --> B{Rate Limiter<br/>120 req/min}
     B -->|Allowed| C[Security Headers]
@@ -765,11 +777,11 @@ graph TB
     G --> H[Audit<br/>Log]
     H --> I[Response]
     
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
-    style G fill:#c8e6c9
-    style I fill:#ffccbc
+    style A fill:#e3f2fd,stroke:#333,color:#000
+    style B fill:#fff3e0,stroke:#333,color:#000
+    style C fill:#f3e5f5,stroke:#333,color:#000
+    style G fill:#c8e6c9,stroke:#333,color:#000
+    style I fill:#ffccbc,stroke:#333,color:#000
 ```
 
 ### 🔒 Security Features
@@ -792,6 +804,7 @@ graph TB
 ### ⚡ System Performance Metrics
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 gantt
     title System Response Times (ms)
     dateFormat X
@@ -831,6 +844,7 @@ gantt
 We welcome contributions! Please follow these guidelines:
 
 ```mermaid
+%%{init: {'theme': 'neutral'}}%%
 gitGraph
     commit id: "main"
     branch feature
