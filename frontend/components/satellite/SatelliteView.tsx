@@ -3,11 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { api, CityDustData } from "@/lib/api";
 
-declare global {
-  interface Window {
-    L: any;
-  }
-}
+
 
 interface SatelliteViewProps {
   className?: string;
@@ -31,7 +27,7 @@ export default function SatelliteView({ className = "" }: SatelliteViewProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<any>(null);
   const markersRef = useRef<any[]>([]);
-  
+
   // Suppress unused variable warning
   void selectedCity;
 
@@ -330,11 +326,10 @@ export default function SatelliteView({ className = "" }: SatelliteViewProps) {
             <button
               key={layer.id}
               onClick={() => setActiveLayer(layer.id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
-                activeLayer === layer.id
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${activeLayer === layer.id
                   ? "text-white shadow-lg"
                   : "bg-white/70 text-stone-700 hover:bg-white hover:text-stone-900 border border-stone-300"
-              }`}
+                }`}
               style={activeLayer === layer.id ? { background: 'linear-gradient(135deg, #D4A574 0%, #B8935F 100%)' } : {}}
             >
               <span>{layer.icon}</span>

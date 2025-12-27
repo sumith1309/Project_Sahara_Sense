@@ -16,11 +16,7 @@ const riskColors: Record<string, string> = {
   EXTREME: '#8b5cf6'
 };
 
-declare global {
-  interface Window {
-    L: any;
-  }
-}
+
 
 export default function UAEMap({ cities, onCitySelect }: UAEMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -126,14 +122,14 @@ export default function UAEMap({ cities, onCitySelect }: UAEMapProps) {
   return (
     <div className="relative w-full h-[500px] rounded-2xl overflow-hidden border border-gray-700">
       <div ref={mapRef} className="w-full h-full" />
-      
+
       {/* Legend */}
       <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm rounded-lg p-3 z-[1000]">
         <p className="text-xs text-gray-400 mb-2">Risk Level</p>
         <div className="space-y-1">
           {Object.entries(riskColors).map(([level, color]) => (
             <div key={level} className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: color }}/>
+              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: color }} />
               <span className="text-xs text-gray-300">{level}</span>
             </div>
           ))}

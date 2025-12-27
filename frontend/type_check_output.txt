@@ -1,0 +1,30 @@
+
+> haboob-ai-frontend@6.0.0 type-check
+> tsc --noEmit
+
+__tests__/api.test.ts(3,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(4,3): error TS2304: Cannot find name 'beforeEach'.
+__tests__/api.test.ts(5,5): error TS2304: Cannot find name 'jest'.
+__tests__/api.test.ts(8,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(9,5): error TS2304: Cannot find name 'expect'.
+__tests__/api.test.ts(12,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(19,20): error TS2304: Cannot find name 'jest'.
+__tests__/api.test.ts(25,5): error TS2304: Cannot find name 'expect'.
+__tests__/api.test.ts(26,5): error TS2304: Cannot find name 'expect'.
+__tests__/api.test.ts(29,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(30,20): error TS2304: Cannot find name 'jest'.
+__tests__/api.test.ts(32,11): error TS2304: Cannot find name 'expect'.
+__tests__/api.test.ts(36,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(45,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(46,5): error TS2304: Cannot find name 'expect'.
+__tests__/api.test.ts(49,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(50,5): error TS2304: Cannot find name 'expect'.
+__tests__/api.test.ts(53,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(54,5): error TS2304: Cannot find name 'expect'.
+__tests__/api.test.ts(57,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(58,5): error TS2304: Cannot find name 'expect'.
+__tests__/api.test.ts(61,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+__tests__/api.test.ts(62,5): error TS2304: Cannot find name 'expect'.
+components/maps/CityLocationMap.tsx(22,22): error TS2307: Cannot find module 'leaflet' or its corresponding type declarations.
+components/maps/CityLocationMap.tsx(28,30): error TS2503: Cannot find namespace 'L'.
+components/maps/CityLocationMap.tsx(29,28): error TS2503: Cannot find namespace 'L'.
