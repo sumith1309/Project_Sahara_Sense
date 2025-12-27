@@ -8,7 +8,6 @@ internal endpoints or use their data structure as reference.
 """
 
 import httpx
-import asyncio
 from typing import Dict, Any, Optional, List
 from datetime import datetime
 import logging

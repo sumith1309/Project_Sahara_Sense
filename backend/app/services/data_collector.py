@@ -4,7 +4,7 @@ Multi-Source Data Collector with Database Persistence
 import asyncio
 import aiohttp
 from datetime import datetime
-from typing import Dict, List, Optional
+from typing import Dict, List
 import logging
 import random
 
@@ -165,7 +165,7 @@ class DataCollector:
             if city_id:
                 return await source.fetch(session, lat, lon, city_id)
             return await source.fetch(session, lat, lon)
-        except Exception as e:
+        except Exception:
             return None
 
     def ensemble_fusion(self, sources_data: List[Dict]) -> Dict:
@@ -226,11 +226,16 @@ class DataCollector:
         return max(min(500, int(pm25 * 4.17)), min(500, int(pm10 * 2)))
 
     def calculate_risk(self, dust: float) -> str:
-        if dust < 20: return "LOW"
-        elif dust < 50: return "MODERATE"
-        elif dust < 100: return "HIGH"
-        elif dust < 200: return "SEVERE"
-        else: return "EXTREME"
+        if dust < 20: 
+            return "LOW"
+        elif dust < 50: 
+            return "MODERATE"
+        elif dust < 100: 
+            return "HIGH"
+        elif dust < 200: 
+            return "SEVERE"
+        else: 
+            return "EXTREME"
 
     def calculate_risk_score(self, data: Dict) -> int:
         dust = data.get('dust') or 0
@@ -243,15 +248,22 @@ class DataCollector:
         last = self.last_collection.get(city_id, current_dust)
         self.last_collection[city_id] = current_dust
         diff = current_dust - last
-        if diff > 5: return "rising"
-        elif diff < -5: return "falling"
-        else: return "stable"
+        if diff > 5: 
+            return "rising"
+        elif diff < -5: 
+            return "falling"
+        else: 
+            return "stable"
 
     def _assess_data_quality(self, sources_data: List[Dict]) -> str:
-        if len(sources_data) >= 5: return "excellent"
-        elif len(sources_data) >= 3: return "good"
-        elif len(sources_data) >= 2: return "fair"
-        else: return "limited"
+        if len(sources_data) >= 5: 
+            return "excellent"
+        elif len(sources_data) >= 3: 
+            return "good"
+        elif len(sources_data) >= 2: 
+            return "fair"
+        else: 
+            return "limited"
 
     async def get_fallback_data(self, city: Dict) -> Dict:
         cached = await self.cache.get_current(city['id'])

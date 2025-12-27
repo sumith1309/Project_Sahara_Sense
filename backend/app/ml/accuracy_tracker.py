@@ -1,9 +1,8 @@
 import numpy as np
-from datetime import datetime, timedelta
-from typing import Dict, List, Optional
+from datetime import datetime
+from typing import Dict, List
 import logging
 from collections import deque
-import math
 
 logger = logging.getLogger(__name__)
 
@@ -105,7 +104,7 @@ class AccuracyTracker:
                             'hour_ahead': hour_ahead
                         })
                         break
-                except:
+                except Exception:
                     continue
         
         if not matches:

@@ -1,6 +1,6 @@
 import sqlite3
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional
+from typing import Dict, List
 import json
 import os
 import logging

@@ -7,7 +7,6 @@ Critical for aviation clients!
 import aiohttp
 from typing import Dict, Optional, List
 import logging
-import re
 
 logger = logging.getLogger(__name__)
 

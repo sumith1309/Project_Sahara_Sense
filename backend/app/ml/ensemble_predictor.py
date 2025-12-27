@@ -14,7 +14,7 @@ Models:
 """
 import numpy as np
 from datetime import datetime, timedelta
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List
 import logging
 import math
 
@@ -275,7 +275,7 @@ class EnsemblePredictor:
         )
 
         predictions = []
-        model_errors_tracking = {m: [] for m in self.model_weights.keys()}
+        # model_errors_tracking = {m: [] for m in self.model_weights.keys()}
         
         for i in range(hours_ahead):
             # Collect all model predictions for this hour
@@ -616,7 +616,7 @@ class EnsemblePredictor:
             if patterns and 'hourly_averages' in patterns:
                 # Use learned hourly pattern
                 hour_avg = patterns['hourly_averages'].get(future.hour, 30)
-                baseline = patterns.get('baseline_dust', 30)
+                # baseline = patterns.get('baseline_dust', 30)  - Unused
                 
                 # Blend current observation with learned pattern
                 blend_factor = max(0.3, 1 - i * 0.015)

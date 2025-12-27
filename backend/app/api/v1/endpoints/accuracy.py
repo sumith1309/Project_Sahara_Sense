@@ -1,6 +1,5 @@
-from fastapi import APIRouter, HTTPException, BackgroundTasks
+from fastapi import APIRouter, BackgroundTasks
 from datetime import datetime
-from typing import Optional
 
 from app.ml.accuracy_tracker import accuracy_tracker
 from app.ml.data_quality import data_quality_checker

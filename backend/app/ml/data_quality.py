@@ -1,6 +1,6 @@
 import numpy as np
-from datetime import datetime, timedelta, timedelta
-from typing import Dict, List, Optional, Tuple
+from datetime import datetime
+from typing import Dict, List
 import logging
 
 logger = logging.getLogger(__name__)

@@ -6,7 +6,6 @@ Best for: Citizen science sensor data, ground truth validation
 import aiohttp
 from typing import Dict, Optional, List
 import logging
-import math
 
 logger = logging.getLogger(__name__)
 

@@ -1,7 +1,6 @@
 from fastapi import APIRouter
 from datetime import datetime
 import platform
-from typing import Dict
 
 router = APIRouter()
 

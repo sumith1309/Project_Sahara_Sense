@@ -1,6 +1,5 @@
 from pydantic_settings import BaseSettings
 from typing import List, Dict
-import os
 
 class Settings(BaseSettings):
     # App

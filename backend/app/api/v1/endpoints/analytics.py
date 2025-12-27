@@ -1,6 +1,5 @@
 from fastapi import APIRouter, HTTPException
 from datetime import datetime
-from typing import Optional
 import numpy as np
 
 from app.core.database import (

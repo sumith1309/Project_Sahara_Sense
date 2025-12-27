@@ -14,7 +14,6 @@ from app.middleware.security import (
     SecurityHeadersMiddleware,
     RequestLoggingMiddleware
 )
-from app.config import settings
 
 logging.basicConfig(
     level=logging.INFO,
