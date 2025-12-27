@@ -82,7 +82,7 @@ async def fetch_metar(session: aiohttp.ClientSession, icao: str) -> Dict:
                     elif visibility:
                         try:
                             visibility_meters = float(visibility) * 1609.34
-                        except:
+                        except Exception:
                             visibility_meters = 10000
                     else:
                         visibility_meters = 10000

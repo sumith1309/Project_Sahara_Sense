@@ -88,7 +88,7 @@ class AviationWeatherSource:
         try:
             # METAR visibility is in statute miles
             return float(visib) * 1609.34  # Convert to meters
-        except:
+        except Exception:
             return None
 
     def _knots_to_kmh(self, knots) -> Optional[float]:
@@ -97,7 +97,7 @@ class AviationWeatherSource:
             return None
         try:
             return float(knots) * 1.852
-        except:
+        except Exception:
             return None
 
     def _check_dust_conditions(self, metar: Dict) -> bool:

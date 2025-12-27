@@ -71,7 +71,7 @@ async def get_city_analytics(city_id: str, hours: int = 168):
                 hourly_data[hour_key] = []
             if reading.get('dust'):
                 hourly_data[hour_key].append(reading['dust'])
-        except:
+        except Exception:
             pass
 
     hourly_averages = [

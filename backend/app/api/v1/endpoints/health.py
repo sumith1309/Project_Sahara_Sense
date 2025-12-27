@@ -11,7 +11,7 @@ async def health_check():
     return {
         "status": "healthy",
         "timestamp": datetime.utcnow().isoformat(),
-        "version": "5.0.0"
+        "version": "6.0.0"
     }
 
 
@@ -68,7 +68,7 @@ async def detailed_health_check():
             "platform": platform.system(),
             "python_version": platform.python_version()
         }
-    except:
+    except Exception:
         checks["system"] = {
             "platform": platform.system(),
             "python_version": platform.python_version()
@@ -77,7 +77,7 @@ async def detailed_health_check():
     return {
         "status": "healthy" if overall_healthy else "degraded",
         "timestamp": datetime.utcnow().isoformat(),
-        "version": "5.0.0",
+        "version": "6.0.0",
         "checks": checks
     }
 
@@ -102,7 +102,7 @@ async def get_metrics():
         import psutil
         metrics.append(f'haboob_cpu_percent {psutil.cpu_percent()}')
         metrics.append(f'haboob_memory_percent {psutil.virtual_memory().percent}')
-    except:
+    except Exception:
         pass
     
     # Per-city accuracy
@@ -122,7 +122,7 @@ async def readiness_check():
         conn.execute("SELECT 1")
         conn.close()
         return {"status": "ready"}
-    except:
+    except Exception:
         return {"status": "not_ready"}
 
 

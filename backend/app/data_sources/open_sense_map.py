@@ -60,7 +60,7 @@ class OpenSenseMapSource:
 
                         try:
                             value = float(value)
-                        except:
+                        except Exception:
                             continue
 
                         title = sensor.get("title", "").lower()

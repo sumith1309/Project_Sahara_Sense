@@ -41,7 +41,7 @@ class SevenTimerSource:
                     try:
                         import json
                         data = json.loads(text)
-                    except:
+                    except Exception:
                         return None
                 
                 dataseries = data.get("dataseries", [])

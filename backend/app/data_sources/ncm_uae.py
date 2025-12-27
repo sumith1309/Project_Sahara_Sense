@@ -127,7 +127,8 @@ class NCMDataSource:
         if city_id not in NCM_STATIONS:
             return None
             
-        station_info = NCM_STATIONS[city_id]
+        
+        # station_info = NCM_STATIONS[city_id] - Unused
         
         # Try to fetch real NCM data
         ncm_data = await self.fetch_aws_data()
