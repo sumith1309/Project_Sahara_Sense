@@ -35,7 +35,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       
       - name: Install frontend dependencies
-        run: cd frontend && npm ci
+        run: cd frontend && npm ci --legacy-peer-deps
       
       - name: Run ESLint
         run: cd frontend && npm run lint
@@ -89,7 +89,7 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
       
       - name: Install dependencies
-        run: cd frontend && npm ci
+        run: cd frontend && npm ci --legacy-peer-deps
       
       - name: Build
         run: cd frontend && npm run build
