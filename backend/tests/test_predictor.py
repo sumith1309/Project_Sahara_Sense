@@ -10,7 +10,7 @@ from app.ml.ensemble_predictor import EnsemblePredictor
 def test_predictor_initialization():
     predictor = EnsemblePredictor()
     
-    assert predictor.model_version == "5.0.0-production"
+    assert predictor.model_version == "6.0.0-ultra-accuracy"
     assert sum(predictor.model_weights.values()) == pytest.approx(1.0, rel=0.01)
 
 
